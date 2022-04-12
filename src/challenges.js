@@ -18,9 +18,18 @@ function calcArea(base, height) {
 //console.log(calcArea(51, 1));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+
+function splitSentence(nomeString) {
+  let arrString = [];
+  arrString = arrString.from(nomeString);
+  //for (i = 0; i < nomeString.length; i += 1) {
+    //if (nomeString.indexof(' ')) {
+      //let arrString = arrString.from(i);
+    //}
+  return arrString;
 }
+console.log(splitSentence('Eu sou Matheus'));
+
 
 // Desafio 4
 function concatName() {
