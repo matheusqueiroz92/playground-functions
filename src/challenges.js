@@ -6,30 +6,23 @@ function compareTrue(value1, value2) {
     } else {
         resultComparation = false;
     }
-   return resultComparation;
+    return resultComparation;
 }
 //console.log(compareTrue(true, true));
 
-// Desafio 2
+// // Desafio 2
 function calcArea(base, height) {
-    let resultArea = base * height/2;
-    return resultArea;
+     let resultArea = base * height/2;
+     return resultArea;
 }
 //console.log(calcArea(51, 1));
 
 // Desafio 3
-
 function splitSentence(nomeString) {
-  let arrString = [];
-  arrString = arrString.from(nomeString);
-  //for (i = 0; i < nomeString.length; i += 1) {
-    //if (nomeString.indexof(' ')) {
-      //let arrString = arrString.from(i);
-    //}
-  return arrString;
+  arrayString = nomeString.split([' ']);
+  return arrayString;
 }
-console.log(splitSentence('Eu sou Matheus'));
-
+//console.log(splitSentence('go Trybe'));
 
 // Desafio 4
 function concatName() {
