@@ -25,14 +25,18 @@ function splitSentence(nomeString) {
 //console.log(splitSentence('go Trybe'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayNames) {
+  primeiroUltimo = arrayNames[arrayNames.length - 1] + ', ' + arrayNames[0];
+  return primeiroUltimo;
 }
+//console.log(concatName(['captain', 'my', 'captain']));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  points = wins*3 + ties*1;
+  return points;
 }
+//console.log(footballPoints(1, 2));
 
 // Desafio 6
 function highestCount() {
