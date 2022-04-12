@@ -1,8 +1,11 @@
 function compareTrue (value1, value2){
-    if (value1 === true && value2 === true) {
-        return true;
+    let resultComparation = 0;
+    if (value1 == true && value2 == true) {
+        let resultComparation = true;
+        return resultComparation;
     } else {
-        return false;
+        resultComparation = false;
+        return resultComparation;
     }
 }
-console.log(compareTrue(false, true));
+console.log(compareTrue(true, true));
