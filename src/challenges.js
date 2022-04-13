@@ -50,12 +50,21 @@ function highestCount(arrayNumbers) {
   }
   return nVezes;
 }
-console.log(highestCount([9, 9, 2, 3, 9, 5, 7]));
+//console.log(highestCount([9, 9, 2, 3, 9, 5, 7]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse,cat1,cat2) {
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+    return 'cat1';
+  } 
+  else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
+    return 'cat2';
+  } 
+  else  {
+    return 'os gatos trombam e o rato foge';
+  }
 }
+console.log(catAndMouse(0,3,6));
 
 // Desafio 8
 function fizzBuzz() {
