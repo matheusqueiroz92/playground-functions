@@ -64,12 +64,28 @@ function catAndMouse(mouse,cat1,cat2) {
     return 'os gatos trombam e o rato foge';
   }
 }
-console.log(catAndMouse(0,3,6));
+//console.log(catAndMouse(0,3,6));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(arrayPhone) {
+  for (i = 0; i < arrayPhone.length; i +=1) {
+    arrayPhone[i];
+    if (((arrayPhone[i] % 3) == 0) && ((arrayPhone[i] % 5) == 0)) {
+      arrayPhone.splice(i,1,"fizzBuzz");
+    }
+    else if ((arrayPhone[i] % 3) == 0) {
+      arrayPhone.splice(i,1,"fizz");
+    }
+    else if ((arrayPhone[i] % 5) == 0) {
+      arrayPhone.splice(i,1,"buzz");
+    }
+    else {
+      arrayPhone.splice(i,1,"bug!");
+    }
+  }
+  return arrayPhone;
 }
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
