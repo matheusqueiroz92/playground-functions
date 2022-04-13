@@ -39,18 +39,18 @@ function footballPoints(wins, ties) {
 //console.log(footballPoints(1, 2));
 
 // Desafio 6
-let count = 0;
 function highestCount(arrayNumbers) {
+  let nVezes = 0;
   let maiorNumero = Math.max(...arrayNumbers);
   for (i = 0; i < arrayNumbers.length; i +=1) {
     arrayNumbers[i];
     if (arrayNumbers[i] == maiorNumero) {
-      count += 1;
+      nVezes += 1;
     }
   }
-  return count;
+  return nVezes;
 }
-//console.log(highestCount([0,0,0]));
+console.log(highestCount([9, 9, 2, 3, 9, 5, 7]));
 
 // Desafio 7
 function catAndMouse() {
