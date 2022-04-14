@@ -105,9 +105,30 @@ function decode(msgString2) {
 //console.log(decode('h3 th2r2!'));
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(techName, nameFirst) {
+  let tecnologias = [];
+  let techVazio = "Vazio!";
+  for (i = 0; i < techName.length; i += 1){
+      //colocando criando os objetos e colocando no array
+      tecnologias.push({tech: techName[i], name: nameFirst});
+      // ordenando em ordem alfabetica
+      tecnologias.sort(function (a, b) {
+        if (a.tech < b.tech) {
+          return -1;
+        } 
+        else {
+          return true;
+        }
+      });
+    }
+  if (tecnologias.length > 0) {
+    return tecnologias; 
+  }
+  else {
+    return techVazio;
+  } 
 }
+console.log(techList(['Javascript','CSS','HTML','React','Ject'],'Lucas'));
 
 module.exports = {
   calcArea,
