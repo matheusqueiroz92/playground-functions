@@ -20,15 +20,21 @@ function generatePhoneNumber(phoneNumber) {
     return msgReturn;
   }
 }
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
-
-
-
+//console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  if (Math.abs(lineA > lineB + lineC || lineB > lineA + lineC || lineC > lineA + lineB)) {
+    return false;
+  }
+  else if (Math.abs(lineA < lineB - lineC || lineA < lineC - lineB || lineB < lineA - lineC || lineB < lineC - lineA || lineC < lineA - lineB || lineC < lineB - lineA)){
+    return false;
+  }
+  else {
+    return true
+  }
 }
+console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
 function hydrate() {
