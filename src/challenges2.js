@@ -34,12 +34,28 @@ function triangleCheck(lineA, lineB, lineC) {
     return true
   }
 }
-console.log(triangleCheck(10, 14, 8));
+//console.log(triangleCheck(10, 14, 8));
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(qtdDrink) {
+  let soma = 0; //variável que receberá a quantidade de bebidas
+  let qtdT = 0; // variável para receber a string que converterá em número
+  let qtd = qtdDrink.replace(/[^0-9]/g, ""); //extraindo apenas os números da string
+  let arr = qtd.split(''); //colocando os números extraídos em um array
+  for (let i = 0; i < arr.length; i += 1) {
+    qtdT = parseInt(arr[i], 10); //transformando string em número
+    soma = soma + qtdT;
+  }
+  if (soma == 1) {
+    return soma + " copo de água";
+  }
+  else {
+    return soma + " copos de água";
+  }
 }
+console.log(hydrate("2 cervejas, 3 copos de vinho, 4 copo de cachaça"));
+
+
 
 module.exports = {
   generatePhoneNumber,
